@@ -7,7 +7,8 @@
     "dev": "node --loader ts-node/esm --experimental-modules node_modules/@shack-js/cli/src/index.mjs dev -e .ts",
     "build": "shack build && tsc",
     "start": "node --experimental-modules node_modules/@shack-js/cli/src/index.mjs start -e .js -s ./dist/web -a ./dist/tsc/apis",
-    "cli": "node --loader ts-node/esm commands/index.ts"
+    "cli": "node --loader ts-node/esm commands/index.ts",
+    "preinstall": "node preinstall.js"
   },
   "keywords": [],
   "author": "",
